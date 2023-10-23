@@ -7,6 +7,8 @@ args: `TODO`
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/b12fea36-db7d-441b-9280-111aafac94c6)
 
+---
+
 ### GiveNamedItem
 search string: `lea     rcx, aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
 
