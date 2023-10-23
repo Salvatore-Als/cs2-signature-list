@@ -2,12 +2,14 @@
 
 ### WeaponBuy
 search string: `lea     rdx, aItemPurchase ; "item_purchase"`
+
 args: `TODO`
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/b12fea36-db7d-441b-9280-111aafac94c6)
 
 ### GiveNamedItem
 search string: `lea     rcx, aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
+
 args: `TODO`
 
 You have to look for the one that contains kevlar and other indication in the function
