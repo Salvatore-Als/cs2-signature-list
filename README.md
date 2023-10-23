@@ -36,6 +36,8 @@ v15 = (__int64 *)(*(__int64 (__fastcall **)(__int64, const char *, _QWORD, _QWOR
 
 prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, CBaseEntity* pEntity, bool chat, const char* msg_name, const char* param1, const char* param2, const char* param3, const char* param4);
 
+---
+
 ### UTIL_SayTextFilter
 xref `UTIL_SayTextFilter2`, look for the following snippet:
 
