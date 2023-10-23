@@ -60,7 +60,7 @@ prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, const char* pText
 ### TeamChange
 search string `"\"%s<%i><%s><%s>\" ChangeTeam() CTMDBG`
 
-args: `int64 unk, int teamIndex`
+args: `CBasePlayerController *pController, int teamIndex`
 
 dll: server
 
