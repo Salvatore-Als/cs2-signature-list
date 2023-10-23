@@ -1,5 +1,3 @@
-# cs2-signature-list
-
 ### WeaponBuy
 search string: `aItemPurchase ; "item_purchase"`
 
@@ -17,3 +15,12 @@ args: `TODO`
 You have to look for the one that contains kevlar and other indication in the function
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/926e26df-2156-4d1c-8b2d-640c20c41c91)
+
+---
+
+### TeamChange
+search string `"\"%s<%i><%s><%s>\" ChangeTeam() CTMDBG`
+
+args: `int64 unk, int teamIndex`
+
+![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/164f1a0e-73b8-48a6-a05e-8ac91c15177d)
