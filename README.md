@@ -3,6 +3,8 @@ search string: `aItemPurchase ; "item_purchase"`
 
 args: `TODO`
 
+dll: server
+
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/b12fea36-db7d-441b-9280-111aafac94c6)
 
 ---
@@ -11,6 +13,8 @@ args: `TODO`
 search string: `aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
 
 args: `TODO`
+
+dll: server
 
 You have to look for the one that contains kevlar and other indication in the function
 
@@ -22,5 +26,7 @@ You have to look for the one that contains kevlar and other indication in the fu
 search string `"\"%s<%i><%s><%s>\" ChangeTeam() CTMDBG`
 
 args: `int64 unk, int teamIndex`
+
+dll: server
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/164f1a0e-73b8-48a6-a05e-8ac91c15177d)
