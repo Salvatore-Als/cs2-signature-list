@@ -1,7 +1,7 @@
 # cs2-signature-list
 
 ### WeaponBuy
-search string: `lea     rdx, aItemPurchase ; "item_purchase"`
+search string: `aItemPurchase ; "item_purchase"`
 
 args: `TODO`
 
@@ -10,7 +10,7 @@ args: `TODO`
 ---
 
 ### GiveNamedItem
-search string: `lea     rcx, aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
+search string: `aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
 
 args: `TODO`
 
