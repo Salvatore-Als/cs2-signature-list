@@ -34,7 +34,9 @@ v15 = (__int64 *)(*(__int64 (__fastcall **)(__int64, const char *, _QWORD, _QWOR
                     0i64);
 ```
 
-prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, CBaseEntity* pEntity, bool chat, const char* msg_name, const char* param1, const char* param2, const char* param3, const char* param4);
+prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, CBaseEntity* pEntity, bool chat, const char* msg_name, const char* param1, const char* param2, const char* param3, const char* param4)`
+
+dll: server
 
 ---
 
@@ -53,11 +55,13 @@ else
 }
 ```
 
-prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, const char* pText, CBasePlayerController* pPlayer, bool chat);`
+prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, const char* pText, CBasePlayerController* pPlayer, bool chat)`
+
+dll: server
 
 ---
 
-### TeamChange
+### CBasePlayerController::ChangeTeam
 search string `"\"%s<%i><%s><%s>\" ChangeTeam() CTMDBG`
 
 args: `CBasePlayerController *pController, int teamIndex`
@@ -65,3 +69,86 @@ args: `CBasePlayerController *pController, int teamIndex`
 dll: server
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/164f1a0e-73b8-48a6-a05e-8ac91c15177d)
+
+### CBasePlayerController::HandleCommand_JoinTeam
+search string `CBasePlayerController::HandleCommand_JoinTeam( %d ) - invalid team index.\n`
+
+prototype: `bool CBasePlayerController::HandleCommand_JoinTeam(CBasePlayerController *pPlayerController, int teamIndex, bool bQueue)`
+
+dll: server
+
+### CCSPlayerController::SwitchTeam
+search string `CCSPlayerPawnBase::SwitchTeam( %d ) - invalid team index.\n`
+
+or search string `\"%s<%i><%s><%s>\" SwitchTeam => ChangeBasePlayerTeamAndPendingTeam =%d , req team %d %.2f \n`
+
+prototype: `bool CCSPlayerController::SwitchTeam(CBasePlayerController *pPlayerController, int teamIndex)`
+
+dll: server
+
+### CGameRules::ClientSettingsChanged
+search string `fov_desired`, xref
+
+look for the following snippet:
+```cpp
+if ( (_DWORD)PlayerInfo != -1 )
+    v4 = (_DWORD)PlayerInfo - 1;
+  v31 = (_BYTE *)v30(g_Source2EngineToServer, v4, "fov_desired");
+```
+
+the current function is `CGameRules::ClientSettingsChanged`
+
+prototype: `bool CGameRules::ClientSettingsChanged(CGameRules *pGameRules, CBasePlayerController *pPlayerController)`
+
+dll: server
+
+### GetCSGlobalTeam & UTIL_ConsolePrint
+search string `%sTeam playing \"CT\": %s\n`
+
+look for the following snippet:
+```cpp
+  if ( a1 )
+    v2 = a1;
+  v4 = GetCSGlobalTeam(3);
+  if ( v4 )
+  {
+    v5 = (_BYTE *)sub_18014F360(v4);
+    if ( v5 && *v5 )
+    {
+      UTIL_ConsolePrint("%sTeam playing \"CT\": %s\n", v2, v5);
+    }
+    else if ( v3 )
+    {
+      UTIL_ConsolePrint("%sTeam \"CT\" is unset.\n", v2);
+    }
+  }
+```
+
+prototype: `CCSTeam *GetCSGlobalTeam(int teamIndex)`
+
+prototype: `void UTIL_ConsolePrint(const char *fmt, ...)`
+
+dll: server
+
+### UTIL_GetListenServerHost & UTIL_PlayerSlotToPlayerController
+search string `UTIL_GetListenServerHost() called from a dedicated server or single-player game.\n`
+
+look for the following snippet:
+```cpp
+__int64 UTIL_GetListenServerHost()
+{
+  __int64 v0; // rdx
+  __int64 v1; // r8
+
+  if ( !(unsigned __int8)sub_180CFAA80() )
+    return UTIL_PlayerSlotToPlayerController(0);
+  Warning("UTIL_GetListenServerHost() called from a dedicated server or single-player game.\n", v0, v1);
+  return 0i64;
+}
+```
+
+prototype: `CBasePlayerController *UTIL_GetListenServerHost()`
+
+prototype: `CBasePlayerController *UTIL_PlayerSlotToPlayerController(CPlayerSlot slot)`
+
+dll: server
