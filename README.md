@@ -3,7 +3,7 @@ search string: `aItemPurchase ; "item_purchase"`
 
 args: `TODO`
 
-dll: server
+dll: `server`
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/b12fea36-db7d-441b-9280-111aafac94c6)
 
@@ -14,7 +14,7 @@ search string: `aNullptrEntInGi ; "nullptr Ent in GiveNamedItem: %s!`
 
 args: `TODO`
 
-dll: server
+dll: `server`
 
 You have to look for the one that contains kevlar and other indication in the function
 
@@ -36,7 +36,7 @@ v15 = (__int64 *)(*(__int64 (__fastcall **)(__int64, const char *, _QWORD, _QWOR
 
 prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, CBaseEntity* pEntity, bool chat, const char* msg_name, const char* param1, const char* param2, const char* param3, const char* param4)`
 
-dll: server
+dll: `server`
 
 ---
 
@@ -57,7 +57,7 @@ else
 
 prototype: `void UTIL_SayTextFilter2(IRecipientFilter* filter, const char* pText, CBasePlayerController* pPlayer, bool chat)`
 
-dll: server
+dll: `server`
 
 ---
 
@@ -66,16 +66,20 @@ search string `"\"%s<%i><%s><%s>\" ChangeTeam() CTMDBG`
 
 args: `CBasePlayerController *pController, int teamIndex`
 
-dll: server
+dll: `server`
 
 ![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/164f1a0e-73b8-48a6-a05e-8ac91c15177d)
+
+---
 
 ### CBasePlayerController::HandleCommand_JoinTeam
 search string `CBasePlayerController::HandleCommand_JoinTeam( %d ) - invalid team index.\n`
 
 prototype: `bool CBasePlayerController::HandleCommand_JoinTeam(CBasePlayerController *pPlayerController, int teamIndex, bool bQueue)`
 
-dll: server
+dll: `server`
+
+---
 
 ### CCSPlayerController::SwitchTeam
 search string `CCSPlayerPawnBase::SwitchTeam( %d ) - invalid team index.\n`
@@ -84,7 +88,9 @@ or search string `\"%s<%i><%s><%s>\" SwitchTeam => ChangeBasePlayerTeamAndPendin
 
 prototype: `bool CCSPlayerController::SwitchTeam(CBasePlayerController *pPlayerController, int teamIndex)`
 
-dll: server
+dll: `server`
+
+---
 
 ### CGameRules::ClientSettingsChanged
 search string `fov_desired`, xref
@@ -100,7 +106,9 @@ the current function is `CGameRules::ClientSettingsChanged`
 
 prototype: `bool CGameRules::ClientSettingsChanged(CGameRules *pGameRules, CBasePlayerController *pPlayerController)`
 
-dll: server
+dll: `server`
+
+---
 
 ### GetCSGlobalTeam & UTIL_ConsolePrint
 search string `%sTeam playing \"CT\": %s\n`
@@ -128,7 +136,9 @@ prototype: `CCSTeam *GetCSGlobalTeam(int teamIndex)`
 
 prototype: `void UTIL_ConsolePrint(const char *fmt, ...)`
 
-dll: server
+dll: `server`
+
+---
 
 ### UTIL_GetListenServerHost & UTIL_PlayerSlotToPlayerController
 search string `UTIL_GetListenServerHost() called from a dedicated server or single-player game.\n`
@@ -151,4 +161,4 @@ prototype: `CBasePlayerController *UTIL_GetListenServerHost()`
 
 prototype: `CBasePlayerController *UTIL_PlayerSlotToPlayerController(CPlayerSlot slot)`
 
-dll: server
+dll: `server`
