@@ -1,3 +1,9 @@
+This repository gives you indications on the strings to search in order to find the signatures of the functions on CS2.
+
+Keep in mind that you will need to refine your search, it is not an exact science.
+
+---
+
 ### WeaponBuy
 search string: `aItemPurchase ; "item_purchase"`
 
