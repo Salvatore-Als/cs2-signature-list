@@ -5,7 +5,7 @@ Keep in mind that you will need to refine your search, it is not an exact scienc
 ---
 
 ### WeaponBuy
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/makesig.idc
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/WeaponBuy.md
 
 ### GiveNamedItem
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/GiveNamedItem.md
