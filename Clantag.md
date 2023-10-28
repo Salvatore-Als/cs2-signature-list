@@ -14,7 +14,7 @@ if ( !strcmp(Name, "ClanTagChanged") && (*(unsigned __int8 (__fastcall **)(_BYTE
     }
 ```
 
-On my snippet, the finction is the one after `String = KeyValues::GetString(a3, "tag", byte_180D76F38, 0i64, 0i64);` so XREF `sub_180638D90`.
+On my snippet, the function is the one after `String = KeyValues::GetString(a3, "tag", byte_180D76F38, 0i64, 0i64);` so XREF `sub_180638D90`.
 
 args: `CBasePlayerController *pController, char clantag`
 
