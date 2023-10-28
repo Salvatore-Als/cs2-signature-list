@@ -4,6 +4,9 @@ Keep in mind that you will need to refine your search, it is not an exact scienc
 
 ---
 
+### Clantag
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/Clantag.md
+
 ### WeaponBuy
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/WeaponBuy.md
 
