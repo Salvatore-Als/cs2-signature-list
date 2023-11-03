@@ -29,7 +29,7 @@ prototype: `void UTIL_ClientPrintAll(int destination, const char *message, const
 
 dll: `server`
 
-![image](https://prnt.sc/GphQ57V8r1-T)
+![image](https://img001.prntscr.com/file/img001/YOtHPJTDTIyU7vggi8U__A.pngs)
 
 ```cpp
 #define HUD_PRINTNOTIFY		1

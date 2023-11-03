@@ -44,4 +44,4 @@ https://github.com/Salvatore-Als/cs2-signature-list/blob/main/TakeDamage.md
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/ClientPrint.md
 
 ### UTIL_ClientPrint
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrint.md
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrintAll.md

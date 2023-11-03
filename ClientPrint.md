@@ -14,4 +14,4 @@ prototype: `void ClientPrint(CBasePlayerController *player, int destination, con
 
 dll: `server`
 
-![image](https://prnt.sc/uVQU8zS1qDdY)
+![image](https://img001.prntscr.com/file/img001/IDJbtCJzSaCXXWEPX4KAuQ.pngs)
