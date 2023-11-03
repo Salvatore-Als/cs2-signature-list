@@ -20,16 +20,16 @@ https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_SayTextFilter
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_SayTextFilter.md
 
 ### CBasePlayerController::ChangeTeam
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBasePlayerController::ChangeTeam.md
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBasePlayerController-ChangeTeam.md
 
 ### CBasePlayerController::HandleCommand_JoinTeam
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBasePlayerController::HandleCommand_JoinTeam.md
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBasePlayerController-HandleCommand_JoinTeam.md
 
 ### CCSPlayerController::SwitchTeam
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CCSPlayerController::SwitchTeam.md
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CCSPlayerController-SwitchTeam.md
 
 ### CGameRules::ClientSettingsChanged
-https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CGameRules::ClientSettingsChanged.md
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CGameRules-ClientSettingsChanged.md
 
 ### GetCSGlobalTeam & UTIL_ConsolePrint
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/GetCSGlobalTeam__AND__UTIL_ConsolePrint.md
@@ -39,3 +39,9 @@ https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_GetListenServ
 
 ### TakeDamage
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/TakeDamage.md
+
+### ClientPrint
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/ClientPrint.md
+
+### UTIL_ClientPrint
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrint.md
