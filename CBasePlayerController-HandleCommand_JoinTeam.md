@@ -1,4 +1,4 @@
-search string `CBasePlayerController::HandleCommand_JoinTeam( %d ) - invalid team index.\n`
+search string `HandleCommand_JoinTeam( %d ) - invalid`
 
 prototype: `bool CBasePlayerController::HandleCommand_JoinTeam(CBasePlayerController *pPlayerController, int teamIndex, bool bQueue)`
 
