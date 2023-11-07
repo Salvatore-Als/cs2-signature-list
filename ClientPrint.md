@@ -14,4 +14,5 @@ prototype: `void ClientPrint(CBasePlayerController *player, int destination, con
 
 dll: `server`
 
-![image](https://img001.prntscr.com/file/img001/IDJbtCJzSaCXXWEPX4KAuQ.pngs)
+![image](https://github.com/Salvatore-Als/cs2-signature-list/assets/58212852/2f50514a-520d-412d-b447-cc61534ecaa1)
+
