@@ -45,3 +45,9 @@ https://github.com/Salvatore-Als/cs2-signature-list/blob/main/ClientPrint.md
 
 ### UTIL_ClientPrint
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrintAll.md
+
+### UTIL_ClientPrint
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrintAll.md
+
+### CBaseModelEntity::SetModel
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBaseModelEntity_SetModel.md
