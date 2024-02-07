@@ -1,4 +1,4 @@
-search string: `name \"%s\"`, and xref
+search string: `name \"%s\"` or `newname`, and xref
 
 ```cpp
                 CBasePlayerController::SetPlayerName(v7, &v52);
