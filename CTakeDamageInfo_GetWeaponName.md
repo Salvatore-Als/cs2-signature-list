@@ -18,6 +18,6 @@ Looks for following code snippet:
 }
 ```
 
-prototype: `const char *CTakeDamageInfo_GetWeaponName(CTakeDamageInfo *pthis)`
+prototype: `const char *CTakeDamageInfo::GetWeaponName(CTakeDamageInfo *pthis)`
 
 dll: `server`

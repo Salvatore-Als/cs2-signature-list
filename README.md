@@ -51,3 +51,15 @@ https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_ClientPrintAl
 
 ### CBaseModelEntity::SetModel
 https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CBaseModelEntity_SetModel.md
+
+### Host_Say
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/Host_Say.md
+
+### NetworkStateChanged
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/NetworkStateChanged.md
+
+### UTIL_Remove
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/UTIL_Remove.md
+
+### CTakeDamageInfo::GetWeaponName
+https://github.com/Salvatore-Als/cs2-signature-list/blob/main/CTakeDamageInfo_GetWeaponName.md
